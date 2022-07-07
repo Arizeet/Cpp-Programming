@@ -5,7 +5,7 @@ int binarySearch(int arr[],int n, int key)
     int s=0,e=n;
     while (s<=e)
     {
-        int mid=(s+e)/2;
+        int mid=s+(e-s)/2;
         if (arr[mid]==key)
             return mid;
         else if (arr[mid]>key)
